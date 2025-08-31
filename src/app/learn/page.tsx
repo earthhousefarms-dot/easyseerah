@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import BookReader from "@/components/BookReader";
@@ -187,7 +186,7 @@ export default function LearnPage() {
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
   const [score, setScore] = useState(0);
   const [quizComplete, setQuizComplete] = useState(false);
-  const [userProgress, setUserProgress] = useState({
+  const [userProgress] = useState({
     completedLessons: 0,
     completedChapters: 0,
     totalPoints: 0,
@@ -530,7 +529,6 @@ export default function LearnPage() {
 
       {selectedBook && (
         <BookReader 
-          bookId={selectedBook} 
           onClose={() => setSelectedBook(null)} 
         />
       )}

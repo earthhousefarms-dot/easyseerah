@@ -46,7 +46,7 @@ export default function Lessons() {
             Timeless Lessons
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Wisdom from the Prophet's ﷺ life applicable to our modern world
+            Wisdom from the Prophet&apos;s ﷺ life applicable to our modern world
           </p>
         </div>
 
@@ -81,7 +81,7 @@ export default function Lessons() {
               <span className="text-emerald-600 mt-1">✓</span>
               <div>
                 <h4 className="font-semibold text-gray-900">Strengthen Your Faith</h4>
-                <p className="text-gray-600">Understanding the Prophet's life deepens your connection with Islam</p>
+                <p className="text-gray-600">Understanding the Prophet&apos;s life deepens your connection with Islam</p>
               </div>
             </div>
             <div className="flex items-start space-x-3">

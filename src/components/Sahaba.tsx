@@ -288,7 +288,7 @@ export default function Sahaba() {
               
               {selectedSahabi.quote && (
                 <div className="bg-emerald-50 rounded-lg p-4 border-l-4 border-emerald-600">
-                  <p className="text-gray-700 italic">"{selectedSahabi.quote}"</p>
+                  <p className="text-gray-700 italic">&ldquo;{selectedSahabi.quote}&rdquo;</p>
                 </div>
               )}
             </div>

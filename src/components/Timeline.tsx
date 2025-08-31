@@ -156,7 +156,7 @@ export default function Timeline() {
             Interactive Timeline
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Explore the major events in Prophet Muhammad's ﷺ life journey
+            Explore the major events in Prophet Muhammad&apos;s ﷺ life journey
           </p>
         </div>
 

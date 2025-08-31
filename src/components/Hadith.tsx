@@ -170,7 +170,7 @@ export default function Hadith() {
                   onClick={() => setSelectedHadith(hadith)}
                   className="bg-white rounded-lg p-4 hover:shadow-lg transition-all cursor-pointer"
                 >
-                  <p className="text-gray-700 mb-2 italic">"{hadith.text}"</p>
+                  <p className="text-gray-700 mb-2 italic">&ldquo;{hadith.text}&rdquo;</p>
                   <div className="flex justify-between items-center text-sm">
                     <span className="text-gray-500">📖 {hadith.source}</span>
                     <span className="bg-emerald-100 text-emerald-700 px-2 py-1 rounded">
@@ -215,8 +215,8 @@ export default function Hadith() {
               <ul className="text-sm space-y-1 opacity-90">
                 <li>• Sahih (Authentic)</li>
                 <li>• Hasan (Good)</li>
-                <li>• Da'if (Weak)</li>
-                <li>• Mawdu' (Fabricated)</li>
+                <li>• Da&apos;if (Weak)</li>
+                <li>• Mawdu&apos; (Fabricated)</li>
               </ul>
             </div>
             <div>
@@ -288,7 +288,7 @@ export default function Hadith() {
                   </svg>
                 </button>
               </div>
-              <p className="text-gray-700 text-lg mb-4 italic">"{selectedHadith.text}"</p>
+              <p className="text-gray-700 text-lg mb-4 italic">&ldquo;{selectedHadith.text}&rdquo;</p>
               <div className="space-y-2 text-sm">
                 <p><strong>Narrator:</strong> {selectedHadith.narrator}</p>
                 <p><strong>Source:</strong> {selectedHadith.source}</p>

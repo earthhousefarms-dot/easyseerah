@@ -274,7 +274,7 @@ Follow us @easyseerah on social media
             Seerah Tours
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Journey through the blessed places of the Prophet's ﷺ life with virtual tours and downloadable guides
+            Journey through the blessed places of the Prophet&apos;s ﷺ life with virtual tours and downloadable guides
           </p>
         </div>
 

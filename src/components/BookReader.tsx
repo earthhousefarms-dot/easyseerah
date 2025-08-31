@@ -4,11 +4,10 @@ import { useState } from "react";
 import { easySeerahMakkahBook } from "@/data/easyseerah-book";
 
 interface BookReaderProps {
-  bookId: string;
   onClose: () => void;
 }
 
-export default function BookReader({ bookId, onClose }: BookReaderProps) {
+export default function BookReader({ onClose }: BookReaderProps) {
   const [currentChapter, setCurrentChapter] = useState(0);
   const [showQuiz, setShowQuiz] = useState(false);
   const [quizAnswers, setQuizAnswers] = useState<number[]>([]);
