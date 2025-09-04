@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import StructuredData from "@/components/StructuredData";
+import EnhancedStructuredData from "@/components/EnhancedStructuredData";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Easy Seerah - Complete Seerah of Prophet Muhammad ﷺ | Learn Seerah Online",
-  description: "Learn Seerah - The complete biography and life story of Prophet Muhammad ﷺ. Interactive Seerah lessons, authentic hadith, timeline, Sahaba stories, and comprehensive Islamic history resources for all ages.",
-  keywords: "seerah, seerah of prophet muhammad, learn seerah, seerah online, prophet muhammad biography, sirah, islamic history, prophetic biography, seerah for kids, seerah stories, seerah lessons, hadith, sahaba, makkah period, madinah period, prophet life story",
+  title: "Easy Seerah - Free Online Seerah Course | Learn Prophet Muhammad's Biography",
+  description: "FREE comprehensive Seerah course online. Learn the complete biography of Prophet Muhammad ﷺ with interactive lessons, timeline, quizzes, and resources. Better than books - completely free, always updated.",
+  keywords: "easy seerah, easyseerah, seerah, sirah, free seerah course, learn seerah online free, seerah online, prophet muhammad biography, simple seerah alternative, seerah for kids, seerah stories, seerah lessons free, interactive seerah, seerah pdf, seerah timeline, islamic history online",
   authors: [{ name: "Easy Seerah" }],
   metadataBase: new URL('https://easyseerah.com'),
   alternates: {
@@ -67,7 +67,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <StructuredData />
+        <EnhancedStructuredData type="homepage" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+        <meta name="theme-color" content="#10b981" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

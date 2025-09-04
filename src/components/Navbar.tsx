@@ -20,6 +20,15 @@ export default function Navbar() {
           </div>
 
           <div className="hidden md:flex items-center space-x-6">
+            <Link href="/free-seerah-course" className="text-emerald-600 font-semibold hover:text-emerald-700 transition-colors">
+              FREE Course
+            </Link>
+            <Link href="/what-is-seerah" className="text-gray-700 hover:text-emerald-600 transition-colors">
+              What is Seerah
+            </Link>
+            <Link href="/seerah-for-kids" className="text-gray-700 hover:text-emerald-600 transition-colors">
+              For Kids
+            </Link>
             <Link href="#timeline" className="text-gray-700 hover:text-emerald-600 transition-colors">
               Timeline
             </Link>
@@ -28,12 +37,6 @@ export default function Navbar() {
             </Link>
             <Link href="#hadith" className="text-gray-700 hover:text-emerald-600 transition-colors">
               Hadith
-            </Link>
-            <Link href="#tours" className="text-gray-700 hover:text-emerald-600 transition-colors">
-              Tours
-            </Link>
-            <Link href="#shop" className="text-gray-700 hover:text-emerald-600 transition-colors">
-              Shop
             </Link>
             <Link href="/learn" className="bg-emerald-600 text-white px-4 py-2 rounded-lg hover:bg-emerald-700 transition-colors">
               Start Learning
@@ -56,6 +59,12 @@ export default function Navbar() {
 
         {mobileMenuOpen && (
           <div className="md:hidden py-4 space-y-2">
+            <Link href="/what-is-seerah" className="block py-2 text-gray-700 hover:text-emerald-600">
+              What is Seerah
+            </Link>
+            <Link href="/seerah-for-kids" className="block py-2 text-gray-700 hover:text-emerald-600">
+              For Kids
+            </Link>
             <Link href="#timeline" className="block py-2 text-gray-700 hover:text-emerald-600">
               Timeline
             </Link>
