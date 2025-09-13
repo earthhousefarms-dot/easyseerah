@@ -35,6 +35,24 @@ export default function Lessons() {
       description: "He established that all humans are equal regardless of race, color, or status.",
       icon: "⚖️",
       verses: ["O mankind, We created you from male and female and made you peoples and tribes that you may know one another - Quran 49:13"]
+    },
+    {
+      title: "Excellence in Work",
+      description: "He taught us to perfect whatever we do. 'Allah loves when one does a job, to do it with excellence.'",
+      icon: "⭐",
+      verses: ["Indeed, Allah loves those who do good - Quran 2:195"]
+    },
+    {
+      title: "Family Values",
+      description: "The best among you is the one who is best to his family. He helped with housework and played with children.",
+      icon: "👨‍👩‍👧‍👦",
+      verses: ["And live with them in kindness - Quran 4:19"]
+    },
+    {
+      title: "Seeking Knowledge",
+      description: "He emphasized learning from cradle to grave. 'Seeking knowledge is obligatory upon every Muslim.'",
+      icon: "📚",
+      verses: ["Say: Are those who know equal to those who do not know? - Quran 39:9"]
     }
   ];
 

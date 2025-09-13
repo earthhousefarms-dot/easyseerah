@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Easy Seerah - Free Online Seerah Course | Learn Prophet Muhammad's Biography",
-  description: "FREE comprehensive Seerah course online. Learn the complete biography of Prophet Muhammad ﷺ with interactive lessons, timeline, quizzes, and resources. Better than books - completely free, always updated.",
+  title: "Easy Seerah - Learn Prophet Muhammad's Life Story",
+  description: "Free Seerah course online. Learn about Prophet Muhammad ﷺ with simple lessons, stories, and timeline. Start learning today!",
   keywords: "easy seerah, easyseerah, seerah, sirah, free seerah course, learn seerah online free, seerah online, prophet muhammad biography, simple seerah alternative, seerah for kids, seerah stories, seerah lessons free, interactive seerah, seerah pdf, seerah timeline, islamic history online",
   authors: [{ name: "Easy Seerah" }],
   metadataBase: new URL('https://easyseerah.com'),
@@ -55,7 +55,8 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: 'add-your-google-verification-code-here',
+    google: 'YOUR-VERIFICATION-CODE', // Get this from Google Search Console
+    // bing: 'YOUR-BING-CODE', // Optional: Get from Bing Webmaster Tools
   },
 };
 

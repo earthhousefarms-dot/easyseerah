@@ -56,6 +56,60 @@ const stories = [
     category: "Migration",
     readTime: "4 min",
     image: "🕷️"
+  },
+  {
+    id: 7,
+    title: "The Boy and the Date",
+    excerpt: "Teaching honesty to children",
+    content: "A mother called her child saying 'Come, I will give you something.' The Prophet ﷺ asked what she intended to give. She said 'Dates.' He ﷺ said: 'If you had not given him anything, it would have been recorded as a lie.' This teaches us to always be truthful, even with children.",
+    category: "Character",
+    readTime: "3 min",
+    image: "🌴"
+  },
+  {
+    id: 8,
+    title: "The Crying Camel",
+    excerpt: "Mercy to all creatures",
+    content: "A camel came to the Prophet ﷺ with tears in its eyes, complaining. The Prophet ﷺ asked who owned it and told the owner: 'Do you not fear Allah regarding this animal? It complains that you starve it and overwork it.' This shows his mercy extended to all creatures.",
+    category: "Mercy",
+    readTime: "4 min",
+    image: "🐪"
+  },
+  {
+    id: 9,
+    title: "The Old Woman's Question",
+    excerpt: "Gentle humor with wisdom",
+    content: "An old woman asked the Prophet ﷺ to pray she enters Paradise. He said: 'Old women don't enter Paradise.' She began crying. He then smiled and explained: 'You will enter as a young woman, for Allah will recreate everyone in their best form.' This shows his kind humor.",
+    category: "Wisdom",
+    readTime: "3 min",
+    image: "👵"
+  },
+  {
+    id: 10,
+    title: "The Tree That Wept",
+    excerpt: "Even trees loved the Prophet ﷺ",
+    content: "The Prophet ﷺ used to give sermons leaning on a palm tree trunk. When a pulpit was built, the tree began crying like a child. The Prophet ﷺ went to it and embraced it until it calmed down. He said: 'It was crying because it missed hearing the remembrance of Allah.'",
+    category: "Miracles",
+    readTime: "4 min",
+    image: "🌳"
+  },
+  {
+    id: 11,
+    title: "Feeding the Multitude",
+    excerpt: "Blessing in food",
+    content: "During the Battle of the Trench, Jabir invited the Prophet ﷺ for a meal meant for a few people. The Prophet ﷺ invited all 1000 companions. Miraculously, everyone ate their fill from one small pot of meat and bread, and food still remained. This was a miracle of blessing (barakah).",
+    category: "Miracles",
+    readTime: "5 min",
+    image: "🍞"
+  },
+  {
+    id: 12,
+    title: "The Bedouin's Gift",
+    excerpt: "Generosity beyond measure",
+    content: "A Bedouin gave the Prophet ﷺ a small gift. In return, the Prophet ﷺ gave him many camels, goats, and supplies. The man returned to his tribe saying: 'Accept Islam! Muhammad gives like one who fears no poverty.' This was his way - always giving more than receiving.",
+    category: "Generosity",
+    readTime: "4 min",
+    image: "🎁"
   }
 ];
 

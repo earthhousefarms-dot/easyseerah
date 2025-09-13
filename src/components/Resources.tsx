@@ -1,27 +1,30 @@
 export default function Resources() {
   const resources = [
     {
-      category: "Books",
+      category: "Essential Books",
       items: [
-        { title: "The Sealed Nectar (Ar-Raheeq Al-Makhtum)", author: "Safi-ur-Rahman al-Mubarakpuri", type: "book" },
-        { title: "Muhammad: His Life Based on the Earliest Sources", author: "Martin Lings", type: "book" },
-        { title: "In the Footsteps of the Prophet", author: "Tariq Ramadan", type: "book" }
+        { title: "The Sealed Nectar (Ar-Raheeq Al-Makhtum)", author: "Safi-ur-Rahman al-Mubarakpuri", type: "book", description: "Award-winning biography, comprehensive and authentic" },
+        { title: "Muhammad: His Life Based on the Earliest Sources", author: "Martin Lings", type: "book", description: "Beautiful narrative style, highly readable" },
+        { title: "In the Footsteps of the Prophet", author: "Tariq Ramadan", type: "book", description: "Modern lessons from the Prophet's life" },
+        { title: "When the Moon Split", author: "Safiur Rahman Mubarakpuri", type: "book", description: "Simple English, perfect for beginners" }
       ]
     },
     {
       category: "For Children",
       items: [
-        { title: "My First Book About the Prophet Muhammad", author: "Sara Khan", type: "children" },
-        { title: "365 Days with the Prophet Muhammad", author: "Nurdan Damla", type: "children" },
-        { title: "The Prophet's Pond - Seerah Stories", author: "Learning Roots", type: "children" }
+        { title: "My First Book About the Prophet Muhammad", author: "Sara Khan", type: "children", description: "Ages 4-8, colorful illustrations" },
+        { title: "365 Days with the Prophet Muhammad", author: "Nurdan Damla", type: "children", description: "Daily stories for kids" },
+        { title: "The Prophet's Pond - Seerah Stories", author: "Learning Roots", type: "children", description: "Interactive stories with activities" },
+        { title: "Goodnight Stories from the Life of Prophet", author: "Saniyasnain Khan", type: "children", description: "Bedtime stories for young Muslims" }
       ]
     },
     {
-      category: "Video Series",
+      category: "Video & Audio",
       items: [
-        { title: "Seerah of Prophet Muhammad", author: "Yasir Qadhi", type: "video" },
-        { title: "The Life of the Prophet", author: "Hamza Yusuf", type: "video" },
-        { title: "Stories of the Prophets", author: "Mufti Menk", type: "video" }
+        { title: "Seerah of Prophet Muhammad (104 episodes)", author: "Yasir Qadhi", type: "video", description: "Most comprehensive video series" },
+        { title: "The Life of the Prophet", author: "Hamza Yusuf", type: "video", description: "Deep spiritual insights" },
+        { title: "Stories of the Prophets", author: "Mufti Menk", type: "video", description: "Engaging storytelling style" },
+        { title: "The Chosen One Podcast", author: "Sh. Omar Suleiman", type: "audio", description: "Short daily episodes" }
       ]
     }
   ];
@@ -60,12 +63,18 @@ export default function Resources() {
                   <div key={itemIndex} className="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow">
                     <h4 className="font-semibold text-gray-900">{item.title}</h4>
                     <p className="text-sm text-gray-600">{item.author}</p>
+                    {item.description && (
+                      <p className="text-xs text-gray-500 mt-1">{item.description}</p>
+                    )}
                     <span className={`inline-block mt-2 text-xs px-2 py-1 rounded ${
                       item.type === 'book' ? 'bg-blue-100 text-blue-600' :
                       item.type === 'children' ? 'bg-green-100 text-green-600' :
+                      item.type === 'audio' ? 'bg-yellow-100 text-yellow-600' :
                       'bg-purple-100 text-purple-600'
                     }`}>
-                      {item.type === 'children' ? '👶 For Kids' : item.type === 'video' ? '🎥 Video' : '📚 Book'}
+                      {item.type === 'children' ? '👶 For Kids' : 
+                       item.type === 'video' ? '🎥 Video' : 
+                       item.type === 'audio' ? '🎧 Podcast' : '📚 Book'}
                     </span>
                   </div>
                 ))}
