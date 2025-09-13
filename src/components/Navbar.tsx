@@ -20,8 +20,11 @@ export default function Navbar() {
           </div>
 
           <div className="hidden md:flex items-center space-x-6">
-            <Link href="/free-seerah-course" className="text-emerald-600 font-semibold hover:text-emerald-700 transition-colors">
-              FREE Course
+            <Link href="/course" className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors font-semibold">
+              Professional Course
+            </Link>
+            <Link href="/learn" className="text-gray-700 hover:text-emerald-600 transition-colors">
+              Quick Learn
             </Link>
             <Link href="/what-is-seerah" className="text-gray-700 hover:text-emerald-600 transition-colors">
               What is Seerah
@@ -35,11 +38,8 @@ export default function Navbar() {
             <Link href="#sahaba" className="text-gray-700 hover:text-emerald-600 transition-colors">
               Sahaba
             </Link>
-            <Link href="#hadith" className="text-gray-700 hover:text-emerald-600 transition-colors">
-              Hadith
-            </Link>
-            <Link href="/learn" className="bg-emerald-600 text-white px-4 py-2 rounded-lg hover:bg-emerald-700 transition-colors">
-              Start Learning
+            <Link href="/free-seerah-course" className="bg-emerald-600 text-white px-4 py-2 rounded-lg hover:bg-emerald-700 transition-colors">
+              Start Free
             </Link>
           </div>
 
