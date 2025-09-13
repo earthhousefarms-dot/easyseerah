@@ -4,6 +4,7 @@ import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import BookReader from "@/components/BookReader";
+import CourseModule from "@/components/CourseModule";
 import { easySeerahMakkahBook } from "@/data/easyseerah-book";
 
 type LearningTrack = "journey" | "books";
@@ -469,62 +470,10 @@ export default function LearnPage() {
       </div>
 
       {selectedModule && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
-          <div className="bg-white rounded-xl max-w-3xl w-full max-h-[80vh] overflow-y-auto">
-            <div className={`h-32 bg-gradient-to-br ${selectedModule.color} rounded-t-xl flex items-center justify-center relative`}>
-              <button
-                onClick={() => setSelectedModule(null)}
-                className="absolute top-4 right-4 text-white hover:text-gray-200"
-              >
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              </button>
-              <div className="text-white text-center">
-                <div className="text-3xl font-bold mb-1">{selectedModule.title}</div>
-                <div className="text-sm opacity-90">{selectedModule.level} • {selectedModule.duration}</div>
-              </div>
-            </div>
-            
-            <div className="p-8">
-              <p className="text-gray-700 mb-6">
-                {selectedModule.description}
-              </p>
-              
-              <h4 className="text-xl font-bold text-gray-900 mb-4">
-                Topics Covered:
-              </h4>
-              
-              <div className="space-y-3 mb-8">
-                {selectedModule.topics.map((topic, index) => (
-                  <div key={index} className="flex items-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors cursor-pointer">
-                    <div className="w-8 h-8 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center font-semibold text-sm mr-4">
-                      {index + 1}
-                    </div>
-                    <span className="flex-1 text-gray-800">{topic}</span>
-                    <span className="text-gray-400">
-                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                      </svg>
-                    </span>
-                  </div>
-                ))}
-              </div>
-              
-              <div className="flex gap-4">
-                <button className="flex-1 bg-emerald-600 text-white py-3 rounded-lg hover:bg-emerald-700 transition-colors font-semibold">
-                  Start Module
-                </button>
-                <button 
-                  onClick={() => setSelectedModule(null)}
-                  className="px-6 py-3 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors"
-                >
-                  Close
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
+        <CourseModule 
+          module={selectedModule}
+          onClose={() => setSelectedModule(null)}
+        />
       )}
 
       {selectedBook && (
